@@ -1,3 +1,9 @@
+#navButton {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.5rem;
+  padding: 0rem 1.5rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,15 +174,28 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.topBorder {
+  border-bottom: 1px dashed #C0C0C0;
+}
 .navContainer {
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
   width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   color: #212529;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  align-items: baseline;
+}
+.navButtons {
+  display: inline-block;
+}
+.navButtons .button {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.5rem;
+  padding: 0rem 1.5rem;
 }
 .footer {
   width: 100%;
@@ -188,6 +207,17 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .topBanner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+.home .header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
