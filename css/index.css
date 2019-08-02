@@ -209,6 +209,16 @@ img {
     padding-bottom: 1rem;
   }
 }
+@media (max-width: 800px) {
+  .navCompanyName {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .navCompanyName {
+    padding-left: 0rem;
+  }
+}
 .navButtons {
   display: inline-block;
   padding-right: 1rem;
@@ -339,7 +349,7 @@ img {
     width: 90%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home {
     padding: 0rem 1rem;
   }
