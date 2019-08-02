@@ -1,17 +1,17 @@
 #navButton {
   text-decoration: none;
   color: #212529;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 0rem 1.4rem;
 }
 #btn {
+  text-decoration: none;
   font-size: 1.8rem;
-  width: 82%;
   text-align: center;
   background-color: #17A2B8;
   color: white;
-  padding: 1.2rem;
-  border-radius: 1rem;
+  padding: 1.2rem 5.2rem;
+  border-radius: 1.5rem;
 }
 @media (max-width: 500px) {
   #btn {
@@ -221,12 +221,12 @@ img {
 }
 .navButtons {
   display: inline-block;
-  padding-right: 1rem;
+  padding-right: 1.8rem;
 }
 .navButtons .button {
   text-decoration: none;
   color: #212529;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 0rem 1.4rem;
 }
 @media (max-width: 500px) {
@@ -328,24 +328,27 @@ img {
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
     width: 80%;
   }
 }
-.home .content-pick .destination .btn {
+.home .content-pick .destination p {
+  padding-bottom: 2rem;
+}
+.home .content-pick .destination .btn a {
+  text-decoration: none;
   font-size: 1.8rem;
-  width: 82%;
   text-align: center;
   background-color: #17A2B8;
   color: white;
-  padding: 1.2rem;
-  border-radius: 1rem;
+  padding: 1.2rem 5.2rem;
+  border-radius: 1.5rem;
 }
 @media (max-width: 500px) {
-  .home .content-pick .destination .btn {
+  .home .content-pick .destination .btn a {
     width: 90%;
   }
 }
@@ -372,6 +375,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 500px) {
+  .form form {
+    width: 95%;
+  }
+}
 .form form fieldset {
   border: 1px solid #C0C0C0;
   background-color: #FFEBCD;
@@ -388,6 +396,11 @@ img {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
 }
+@media (max-width: 500px) {
+  .form form label {
+    width: 40%;
+  }
+}
 .form form .text {
   display: inline-block;
   float: left;
@@ -396,10 +409,32 @@ img {
 .form form .special {
   height: 10rem;
 }
+@media (max-width: 500px) {
+  .form form .special {
+    height: 8rem;
+  }
+}
 .form form .submitButton {
-  width: 20%;
+  width: 10rem;
   display: inline-block;
   position: relative;
   top: 250px;
   left: -35%;
+}
+@media (max-width: 700px) {
+  .form form .submitButton {
+    left: -40%;
+  }
+}
+@media (max-width: 500px) {
+  .form form .submitButton {
+    left: -55%;
+    top: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .form form span {
+    display: block;
+    padding-top: 1rem;
+  }
 }

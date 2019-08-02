@@ -18,12 +18,16 @@
         margin-left: auto;
         margin-right: auto;
 
+        @media @mobile {
+            width: 95%;
+        }
+
         fieldset {
             border: 1px solid @silver;            
             background-color: @sandy-beach;
             height: 400px;
             padding: 2rem;
-            margin-bottom: 5rem;            
+            margin-bottom: 5rem;
         }
 
         label {
@@ -34,6 +38,10 @@
             text-align: right;
             padding-bottom: 1.5rem;
             padding-right: 1rem;
+
+            @media @mobile {
+                width: 40%;
+            }
         }
 
         .text {
@@ -44,16 +52,35 @@
 
         .special {
             height: 10rem;
+
+            @media @mobile {
+                height: 8rem;
+            }
         }
 
         .submitButton {
-            width: 20%;
+            width: 10rem;
             display: inline-block;
             position: relative;
             top: 250px;
             left: -35%;
+
+            @media (max-width: 700px) {
+                left: -40%;
+            }
+
+            @media @mobile {
+                left: -55%;
+                top: 200px;
+            }
         }
 
+        span {
+            @media @mobile {
+                display: block;
+                padding-top: 1rem;
+            }
+        }
     }
 
     }
