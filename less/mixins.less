@@ -1,1 +1,26 @@
-// Mixins in here
+#navButton {
+    text-decoration: none;
+    color: @shark;
+    font-size: 1.6rem;
+    padding: 0rem 1.4rem;
+}
+
+#btn {
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: @eastern-blue;
+    color: white;
+    padding: 1.2rem 5.2rem;
+    border-radius: 1.5rem;
+
+    @media @tablet {
+        display: block;
+        width: 95%;
+    }
+
+    @media @mobile {
+        display: block;
+        width: 95%;
+    }
+}

@@ -1,1 +1,42 @@
-// Navigation Styles here
+.topBorder{
+    border-bottom: 2px dashed @silver;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: @shark;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    align-items: baseline;
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+}
+
+.navCompanyName {
+    @media @tablet {
+        padding-left: 1rem;
+    }
+    @media @mobile {
+        padding-left: 0rem;
+    }
+
+}
+.navButtons {
+    display: inline-block;
+    padding-right: 1.8rem;
+    .button{  
+        #navButton();   
+    }
+    @media @mobile {
+        padding-top: 2rem;
+    }
+    
+}
+
